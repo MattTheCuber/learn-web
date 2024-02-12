@@ -1,0 +1,13 @@
+// GLOBAL MIXINS
+
+// media queries
+=retina
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    @content
+
+=link()
+  color: $brand-dark
+  &:hover
+    color: $brand-primary
+  &:active
+    color: darken($brand-primary, 10%)

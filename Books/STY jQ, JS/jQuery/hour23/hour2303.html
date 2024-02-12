@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 23-3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>$(document).ready(function() { checkForMobile(); });</script>
+    <style>img {width:200px; }</style>
+  </head>
+  <body>
+    <div id="border"><div id="frame">      
+      <div data-role="page" id="pageOne">
+        <div data-role="header"><h1>Collapsible</h1></div>
+        <div data-role="content">
+        <div data-role="collapsible" data-collapsed="false"
+             data-theme="b" data-content-theme="c">
+           <h3>Photo Information</h3>
+           <p>These photos were taken by Brad Dayley in Arches National Park, Utah.</p>
+        </div>
+        <div data-role="collapsible-set" data-theme="b" data-content-theme="a">
+          <div data-role="collapsible">
+            <h3>Delicate Arch</h3><img src="./images/arch.jpg" /></div>
+          <div data-role="collapsible" >
+            <h3>Double Arch</h3><img src="./images/double.jpg" /></div>
+          <div data-role="collapsible">
+            <h3>Morning View</h3><img src="./images/sunstar.jpg" /></div>
+        </div>
+        </div>
+      </div>
+    </div></div>
+  </body>
+</html>

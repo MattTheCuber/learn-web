@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 20-2</title>
+    <meta charset="2utf-8" />
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="../../jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../jquery-ui-1.10.4.custom/css/custom-theme/jquery-ui-1.10.4.custom.min.css">
+  </head>
+  <script>
+    function dateChanged(dateStr, Object){ $("span").html("Updated to" + dateStr); }
+    $(document).ready(function(){
+      $( "#autocomplete" ).autocomplete({
+        source: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      });
+    });
+  </script>
+  <style>
+    input { border:2px ridge blue; border-radius:5px; padding:3px; }
+  </style>
+  <body>
+    <label for="autocomplete">Day of Week: </label>
+    <input id="autocomplete">
+  </body>
+</html>

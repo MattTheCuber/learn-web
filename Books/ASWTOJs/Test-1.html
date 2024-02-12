@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test-1</title>
+    <script type="text/javascript">
+      function a() {
+        var num = document.getElementById("number").value;
+        if (num == "3.141592653589793238462643883279502884197169399") {
+          alert("Congrats, you win... " + "nothing.");
+        } else if (num !== "3.141592653589793238462643883279502884197169399") {
+          alert("Better luck next time.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Type 46 numbers of PI: <input id="number" size="48" type="password"> <button type="button" onclick="a();">Submit</button>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #9</title>
+		<script type="text/javascript">
+		function getQuote() {
+			// Create the arrays
+			quotes = new Array(8);
+			sources = new Array(8);
+
+			// Initilize the arrays with quotes
+			quotes [0] = "When I was a boy of 14, my father was so " + "ignorant... but when I got to be 21, I was astonished"; + "at how much he had learned in 7 years"
+			sources [0] = "Mark Twain";
+
+			quotes [1] = "Everybody is ignorant. Only on different " + "subjects.";
+			sources [1] = "Will Rogers";
+
+			quotes [2] = "They say such nice things about people at " + "their funrals that it makes me sad that I'm going to";
+			sources [2] = "Garrison Keilor";
+
+			quotes [3] = "What's another word for thesaurus?";
+			sources [3] = "Steven Wright";
+
+			quotes [4] = "A lie which is half true, " + "is the blackest of all lies.";
+			sources [4] = "Alfred Lord Tennyson";
+
+			quotes [5] = "Many hads make light work.";
+			sources [5] = "John Heywood";
+
+			quotes [6] = "Take time for all things." + " Great haste makes great waste.";
+			sources [6] = "Benjamin Franklen";
+
+			quotes [7] = "Wet rocks are sliperly.";
+			sources [7] = "Matthew Vine";
+
+			// Get a random index into the arrays
+			w = Math.floor(Math.random() * quotes.length);
+
+			// Write out the quote as HTML
+			document.write("<p style='background-color:#bb00ff;'>\"");
+			document.write(quotes [w] + "\"");
+			document.write("<em>- " + sources [w] + "</em>");
+			document.write("</p>");
+		}
+		</script>
+	</head>
+	<body style="text-align:center;">
+		<h1>
+			JavaScript Example
+		</h1>
+		<p>
+			This text is HTML.
+		</p>
+		<script type="text/javascript">
+		<!--
+		document.write ('<p>This text comes from JavaScript.</p>');
+		-->
+		</script>
+		<br>
+		<br>
+		<h1>
+			Quotable Quotes
+		</h1>
+		<p>To see a new quote just reload this page.</p>
+		<script type="text/javascript">
+		<!--
+		getQuote ();
+		-->
+		</script>
+	</body>
+</html>

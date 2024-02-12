@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 23-6</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>$(document).ready(function() { checkForMobile(); });</script>
+    <style>
+      img {width:100px; }
+    </style>
+  </head>
+  <body>
+    <div id="border"><div id="frame">      
+      <div data-role="page" id="pageOne">
+      <div data-role="header"><h1>Tables</h1></div>
+      <div data-role="content">
+      <table data-role="table" data-mode="columntoggle" id="parkTable">
+        <thead><tr><th>Park</th><th data-priority="1">State</th>
+          <th data-priority="2">Est.</th><th data-priority="3">Photo</th></tr>
+        </thead>
+        <tbody>          
+          <tr><td>Yellowstone</th><td>MT</td><td>1872</td>
+            <td><img src="./images/bison.jpg" width="100" /></tr>
+          <tr><td>Yosemite</th><td>CA</td><td>1872</td><td>
+            <img src="./images/falls.jpg" width="100" /></tr>
+          <tr><td>Zion</th><td>UT</td><td>1919</td><td>
+            <img src="./images/peak.jpg" width="100" /></tr>
+        </tbody>
+      </table>
+      </div>
+    </div></div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 24-2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>$(document).ready(function() { checkForMobile(); });</script>
+    <style>
+    img {width:100px; }
+    #vGroup {width:150px;}
+    </style>
+  </head>
+  <body>
+    <div id="border"><div id="frame">      
+      <div data-role="page" id="pageOne">
+      <div data-role="header"><h1>Buttons</h1></div>
+      <div data-role="content">
+        <a href="" data-role="button">Link Button</a>
+        <button data-inline="true" data-theme="b">Accept</button>
+        <button data-inline="true" data-theme="e">Decline</button>
+        <div data-role="controlgroup" data-mini="true" id="vGroup">
+          <button data-icon="arrow-u">Increment</button>
+          <button data-icon="arrow-d">Decrement</button>
+        </div>
+        <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+          <button>b</button><button>i</button><button>u</button>
+        </div>
+        <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+          <button data-icon="grid" data-iconpos="notext">b</button>
+          <button data-icon="gear" data-iconpos="notext">b</button>
+          <button data-icon="star" data-iconpos="notext">b</button>
+        </div>
+        <input type="submit" value="Submit" data-icon="check" data-iconpos="right"/>
+      </div>
+    </div></div>
+  </body>
+</html>

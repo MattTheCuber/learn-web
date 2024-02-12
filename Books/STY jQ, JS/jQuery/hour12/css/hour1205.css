@@ -1,0 +1,14 @@
+.buttons {cursor:pointer;}
+img{ width:40px;}
+span{ width:40px; height:40px; display:inline-block; }
+#plane{ position:fixed; width:100px;}
+#cone1{ position:fixed; top:100px; left: 100px; width:50px;}
+#cone2{ position:fixed; top:300px; left: 300px; width:50px;}
+#cone3{ position:fixed; top:400px; left: 700px; width:50px;}
+#cone4{ position:fixed; top:350px; left: 500px; width:50px;}
+#cone5{ position:fixed; top:500px; left: 200px; width:50px;}
+#cone6{ position:fixed; top:250px; left: 400px; width:50px;}
+#cone7{ position:fixed; top:200px; left: 800px; width:50px;}
+#cone8{ position:fixed; top:450px; left: 600px; width:50px;}
+#cone9{ position:fixed; top:75px; left: 800px; width:50px;}
+#cone10{ position:fixed; top:150px; left: 900px; width:50px;}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Test #3</title>
+	</head>
+
+	<body>
+		<h1>Have Some Fun on "This page &deg &middot"</h1>
+		<button type="button"
+			onclick="alert('You are already in &#34;This page &deg &middot&#34;')">This page &deg &middot</button>
+		<button type="button"
+			onclick="alert('This button is out of service try another button.')">Click Me!</button>
+		<h1>
+			Current Date and Time
+		</h1>
+		<script type="text/javascript">
+			now = new date();
+			localtime = now.toString(); 
+			utcime = now.toGMTString();
+			document.write("<p><strong>Local time:</strong> " + localtime + "</p>");
+			document.write("<p><strong>UTC time:</strong> " + utctime + "</p>");
+			hours = now.gethours();
+			mins = now.getMinuets();
+			secs = now.getSeconds();
+			document.write("<h2>");
+			document.write(hours + ":" + mins + ":" + secs);
+			document.write("</h2>");
+		</script>
+	</body>
+</html>

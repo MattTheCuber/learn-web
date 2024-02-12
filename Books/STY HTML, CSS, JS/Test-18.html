@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #18</title>
+    	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    	<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+    	<script type="text/javascript">
+			//p. 564-566
+			$(document).ready(function() {
+      			$("#animateMe").mousemove(function(e) {
+					$("#animateMe").text("Changing shape...").animate(
+						{
+						width: "500px",
+						height: "100px"
+						}, 400
+					);
+      			})
+      			$("#animateMe").mousemove(function(e) {
+					$(this).text("Changing shape again...").animate(
+						{
+							width: "1px",
+							height: "1px"
+						}, 400
+					);
+      			})
+
+      			$("#img1").click(function(e) {
+      				$(this).effect("explode", {pieces:36}, 1000);
+      			})
+      			$("#img2").click(function(e) {
+      				$(this).effect("blind", {direction:"horizontal"}, 1000);/*also down, left, right, vertical, or up*/
+      			});
+      			$("#img3").click(function(e) {
+      				$(this).effect("bounce", {distance:50, times:5}, 1000);
+      			});
+      			$("#img4").click(function(e) {
+      				$(this).effect("clip", {direction:"vertical"}, 1000);/*also horizontal*/
+      			});
+      			$("#box1").click(function(e) {
+      				$(this).effect("drop", {direction:"left"}, 1000);/*also right, down, or up*/
+      			});
+      			$("#box2").click(function(e) {
+      				$(this).effect("fade", 1000);
+      			});
+      			$("#box3").click(function(e) {
+      				$(this).effect("fold", {size:50, horizFirst:"false"}, 1000);/*also true*/
+      			});
+      			$("#box4").click(function(e) {
+      				$(this).effect("highlight", {color:"#fffb29"}, 1000);
+      			});
+     			$("#box5").click(function(e) {
+      				$(this).effect("puff", {percent:50}, 1000);
+      			});
+      			$("#box6").click(function(e) {
+      				$(this).effect("pulsate", {times:15}, 5000);
+      			});
+      			$("#box7").click(function(e) {
+      				$(this).effect("scale", {direction:"horizontal", origin:["middle", "left"], percent:150, scale:"box"}, 1000);/*direct=vertical scale=box,content,or both*/
+      			});
+      			$("#box8").click(function(e) {
+      				$(this).effect("shake", {direction:"right", distance:75, times:10}, 5000);/*also left, up, or down*/
+      			});
+      			$("#box9").click(function(e) {
+      				$(this).effect("size", {to:{height: 150, width: 250}, origin:["middle", "right"], scale:"content"}, 1000);
+      			});
+      			$("#box10").click(function(e) {
+      				$(this).effect("slide", {direction:"right", distance:150}, 1000);
+      			});
+			});
+    	</script>
+
+		<style type="text/css">
+			.animate
+				{
+					position:absolute;
+					width:100px;
+					height:400px;
+					border:2px solid black;
+					background-color:red;
+					padding:20px;
+					overflow:auto;
+					font-size:25px;
+				}
+			div#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9
+				{
+					width:100px;
+					height:100px;
+					background-color:blue;
+					border:1px solid black;	
+				}
+			div#box
+				{
+					width:100px;
+					height:100px;
+					background-color:blue;
+					border:1px solid black;	
+				}
+			#box10
+				{
+					width:100px;
+					height:100px;
+					background-color:blue;
+					border:1px solid black;
+				}
+			#img2, #img3, #img4
+				{
+					float:left;
+				}
+			p
+				{
+					margin:0px;
+				}
+			div.div
+				{
+					height:115px;
+					width:150px;
+					position:fixed;
+					top:25px;
+					left:775px;
+				}
+			div.div:hover
+				{
+					cursor:move;
+				}
+			#drag2
+				{
+					top:175px;
+				}
+			#drag3
+				{
+					top:325px;
+				}
+			#drag4
+				{
+					top:475px;
+				}
+			img#img
+				{
+					width:150px;
+					height:100px;
+				}
+		    #mychart
+		        {
+		            margin:10px 10px 10px 10px;
+		            width:90%;
+		            max-width: 800px;
+		            height:400px;
+		        }
+		</style>
+	</head>
+	<body class="yui3-skin-sam" style="background-color:green;">
+		<img id="img1" src="./img1.jpg">
+		<br>
+		<h2>Click the Picture. How Many Pieces Exploded?</h2>
+		<form name="guess">
+			<input type="text" name="sentence" size="75">
+			<button type="button" onclick="addname(); addAnswer();">Guess!</button>
+		</form>
+		<br>
+    	<script type="text/javascript">
+	    	function addname() {
+				if (!document.getElementById) return;
+				var sentence = document.guess.sentence.value;
+				var li = document.createElement("li");
+				var node = document.createTextNode(sentence);
+				li.appendChild(node);
+				document.getElementById("list").appendChild(li);
+				document.guess.sentence.value="";
+	    	}
+			function addAnswer() {
+				if (!document.getElementById) return;
+				var li = document.createElement("li");
+				var node = document.createTextNode("Answer: 36");
+				li.appendChild(node);
+				document.getElementById("list").appendChild(li);
+	    	}
+    	</script>
+    	<p><ol id="list"></ol></p>
+    	<br>
+    	<br>
+    	<img id="img4" src="./img4.jpg">
+    	<img id="img3" src="./img3.jpg">
+    	<img id="img2" src="./img2.jpg"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    	<div id="box1">Click this to Drop!</div><br>
+    	<div id="box2">Click this to Fade!</div><br>
+    	<div id="box3">Click this to Fold!</div><br>
+    	<div id="box4">Click this to Highlight!</div><br>
+    	<div id="box5">Click this to Puff!</div><br>
+    	<div id="box6">Click this to Pulsate!</div><br>
+    	<div id="box7">Click this to Scale!</div><br>
+    	<div id="box8">Click this to Shake!</div><br>
+    	<div id="box9">Click this to Resize!</div><br>
+    	<div id="box10">Click this to Slide!</div><br><br><br><br><br><br>
+    	<script type="text/javascript">
+			$(document).ready(function() {
+				$("#drag1").draggable({cursor:"move", opacity:0.5});
+				$("#drag1").on("dragstop", function() {
+					$(this).effect("bounce", 1000);
+				});
+				$("#drag2").draggable({helper:"clone"});
+				$("#drag2").on("dragstop", function(e, ui) {
+					$("#drag2").animate(ui.offset);
+				});
+				$("#drag3").draggable();
+				$("#drag3").on("dragstop", function(e) {
+					$(this).children("p").html(e.pageX+", "+e.pageY);
+				});
+				$("#drag3").on("drag", function(e) {
+					$(this).children("p").html("");
+				});
+				$("#drag4").droppable({accept:"img", tolerance:"touch"});
+			});
+    	</script>
+    	<div class="div" id="drag2">
+    		<img id="img" src="./img5.PNG">
+    	</div>
+    	<br>
+    	<div class="div" id="drag1">
+    		<img id="img" src="./img3.jpg">
+    	</div>
+    	<br>
+    	<div class="div" id="drag3">
+    		<img id="img" src="./img2.jpg">
+    	</div>
+    	<div class="div" id="drag4">
+    		<img id="img" src="./img4.jpg">
+    	</div>
+    	<div class="animate" id="animateMe">Hover</div>
+	</body>
+</html>

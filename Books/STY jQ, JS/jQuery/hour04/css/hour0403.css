@@ -1,0 +1,34 @@
+div {width: 200px; margin: 5px; padding: 2px; text-align: center;}
+#simple {border: 1px solid #000000;}
+#dashed {border: 1px dashed #000000;}
+#dotted {border: 1px dotted #808080;}
+#groove {border: 5px groove #0000B3;}
+#inset {border: 5px inset #B30000;}
+#outset {border: 5px outset #0000B3;}
+#ridge {border: 5px ridge #000000;}
+#round {border: 1px solid; border-radius: 5px;}
+#veryround {border: 1px solid; border-radius: 50%;}
+#shadow {
+	margin: 10px;
+	border: 1px solid #000000;
+	box-shadow: 5px 5px 3px 2px #0000B3;
+}
+#ishadow {
+	margin: 15px;
+	border: 1px solid #000000;
+	box-shadow: 5px 5px 3px 2px #0000B3 inset;
+}
+#mixed {
+	border-top: 1px solid;
+	border-top-left-radius: 5px;
+	border-left: 1px dotted;
+	border-bottom: 5px ridge;
+	border-bottom-right-radius: 10px;
+}
+#button {
+	width: 150px;
+	background-color: #2233FF;
+	color: #FFFFFF;
+	border: 5px outset #0000B3;
+	border-radius: 50%;
+}

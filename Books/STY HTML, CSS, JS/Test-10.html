@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #10</title>
+		<style type="text/css">
+			div#layer1
+				{
+					position:absolute;
+					left:100px;
+					top:100px;
+				}
+		</style>
+
+		<script type="text/javascript">
+			/*this is supposed to be geting element layer 1 by useing that thing but its not working at ALL and i dont know why its very confuseing to matthew vine so... what to write, what to write i think this is enough*/
+			var obj = document.getElementById('layer1').style.top = 200;
+			//this is the checkboxes
+			function showHide() {
+				alert("Are you sure you want to do this?");
+				if (!document.getElementById) return;
+				var heading1 = document.getElementById("heading1");
+				var heading2 = document.getElementById("heading2");
+				var showheading1 = document.checkboxform.checkbox1.checked;
+				var showheading2 = document.checkboxform.checkbox2.checked;
+				heading1.style.visibility=(showheading1) ? "visible" : "hidden";
+				heading2.style.visibility=(showheading2) ? "visible" : "hidden";
+			}
+
+		//changing title 1
+		function changeTitle() {
+			if (!document.getElementById) return;
+			var newtitle = document.changeform.newtitle.value;
+			var heading1 = document.getElementById("heading1");
+			heading1.firstChild.nodeValue=newtitle;
+		}
+
+		//changing title 2
+		function writenewTitle() {
+			if (!document.getElementById) return;
+			var newtitle = document.formchange.changetitle.value;
+			var heading2 = document.getElementById("heading2");
+			heading2.firstChild.nodeValue=newtitle;
+		}
+
+		//add sentences
+		function addtext() {
+			if (!document.getElementById) return;
+			var sentence=document.addingtext.sentence.value;
+			var node=document.createTextNode(" " + sentence);
+			document.getElementById("paragraph1").appendChild(node);
+			document.addingtext.sentence.value="";
+		}
+		</script>
+	</head>
+	<body>
+		<h1 id="heading1">This is the first heading</h1>
+		<h1 id="heading2">This is the second heading</h1>
+		<form name="changeform">
+			<input type="text" name="newtitle" size="30" style="overflow:auto;">
+			<button type="button" onclick="changeTitle();">Change first heading.</button>
+		</form>
+		<form name="formchange">
+			<input type="text" name="changetitle" size="30" style="overflow:auto;">
+			<button type="button" onclick="writenewTitle();">Change second heading.</button>
+		</form>
+		<form name="checkboxform">
+			<input type="checkbox" name="checkbox1" onclick="showHide()" checked="checked">
+			<span style="font-weight:bold;">Show first heading</span>
+			<br>
+			<input type="checkbox" name="checkbox2" onclick="showHide()" checked="checked">
+			<span style="font-weight:bold;">Show second heading</span>
+		</form>
+		<br>
+		<p><h1>Add text to this page!</h1></p>
+		<form name="addingtext">
+			<input type="text" name="sentence" size="65">
+			<button type="button" onclick="addtext()">Add!</button>
+		</form>
+		<br>
+		<p id="paragraph1"></p>
+		<br>
+		<script type="text/javascript">
+			//this is my test words
+			function getWords() {
+				var gre = green;
+				var r = red;
+				var or = orange;
+				var blu = blue;
+				var y = yellow;
+				var p = purple;
+				var bro = brown;
+				var bla = black;
+				var c = cream;
+				var ol = olive;
+				var gol = gold;
+				var s = silver;
+				var i = indigo
+				var v = violet;
+				var m = maroon;
+				var gra = gray;
+				document.write("Here are some colors" + m + r + or + y + gol + ol + gre + i + blu + p + v + bro + gra + s + bla);
+			}
+		</script>
+		<br>
+		<script type="text/javascript">
+			//this is for the math
+			var total = 49;
+			var number = 64273398684.8588;
+
+			//this is the math
+			document.write("7&#215;7 = " + total + ". &nbsp; &nbsp; 343&#247;7 = " + total + ". &nbsp; &nbsp;" + total + "&#215;3 = " + total*3 + ". &nbsp; &nbsp; 64273398684.8588&#247;7 = " + number/7);
+		</script>
+		<br>
+		<script type="text/javascript">
+			//this is for the moving numbers
+			var numword = "55 donuts sat on a shelf. ";
+			var numofdonuts = parseInt(numword);
+
+
+			//this is very very very very very very random
+			document.write(numword + "&nbsp; &nbsp; That is very very very very very very random. But the number of donuts I can write without typing:" + numofdonuts);
+		</script>
+		</script>
+		<br>
+		<button type="button" onclick="history.back(-2);">Go back in history.</button>
+		<button type="button" onclick="history.forward();">Go forward in history.</button>
+		<button type="button" onclick="alert'You are being alerted'">Click me</button>
+	</body>
+</html>

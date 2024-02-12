@@ -1,0 +1,5 @@
+span { display:inline-block; width:130px; border:1px ridge; background-image: -moz-linear-gradient(top , #B1B1B1, #FFFFFF);
+    text-align:center; cursor:pointer; }
+div span{ width:120px; margin-left:10px; }
+#showMenu { position:fixed; left:130px; top:8px;}
+#showMenu2 { position:fixed; left:130px; top:30px;}

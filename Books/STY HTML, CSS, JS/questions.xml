@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<questions>
+	<q>How do you create a input that you could write text in?</q>
+	<a>&lt;input type="text"&gt;</a>
+	<q>How would you create a class name of "class1"?</q>
+	<a>class="class1"</a>
+	<q>What letter/letters stands for a anchor?</q>
+	<a>a</a>
+	<q>What five tags do you every HTML page need? (write commas inbetween tags)</q>
+	<a>&lt;!DOCTYPE html&gt;,&lt;html&gt;,&lt;head&gt;,&lt;title&gt;,&lt;body&gt;</a>
+</questions>

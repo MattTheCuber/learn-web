@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 23-5</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>$(document).ready(function() { checkForMobile(); });</script>
+    <style>
+    img {width:200px; }
+      #pageOne { position:absolute; }
+      .photopopup img { height:180px; }
+      #menu-popup {width:200px; }
+    </style>
+  </head>
+  <body>
+    <div id="border"><div id="frame">      
+      <div data-role="page" id="pageOne">
+      <div data-role="header"><h1>Popups</h1></div>
+      <div data-role="content">
+      <h1>Popup Examples</h1>
+      <a data-role="button" href="#simple" data-rel="popup" id="simpleLink">Simple Popup</a>
+      <div data-role="popup" id="simple" data-position-to="#simpleLink">  
+        <p>Simple text popup.<p>
+        <p>Put whatever text you want here.</p>
+      </div>
+      <a data-role="button" href="#photo" data-rel="popup" id="imageLink">Image Popup</a>
+      <div data-role="popup" id="photo" data-position-to="#imageLink" class="photopopup">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <img src="./images/falls.jpg" />
+      </div>
+      <a data-role="button" href="#menu" data-rel="popup" id="menuLink">Popup Menu</a>
+      <div data-role="popup" id="menu" data-position-to="#menuLink">
+        <ul data-role="listview">
+          <li><a>Setting A</a></li><li><a>Setting B</a></li>
+          <li><a>Setting C</a></li><li><a>Setting D</a></li>
+        </ul>
+      </div>
+      </div>
+    </div></div>
+  </body>
+</html>

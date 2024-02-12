@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 23-2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="./css/hour2302.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        checkForMobile();
+      });
+    </script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="border"><div id="frame">      
+      <div data-role="page" id="pageOne">
+        <div data-role="header"><h1>List Views</h1></div>
+        <div data-role="content">
+        <ul data-role="listview">
+          <li><a href="#thumbs">Thumbnails</a></li>
+          <li><a href="#nested">Nested</a></li>
+          <li><a href="#split">Split List</a></li>
+          <li><a href="#divided">Divided List</a></li>
+          <li><a href="#search">Searchable List</a></li>
+          <li>Non Linkable Item</li>
+      </ul></div></div>
+<!--                    Thumnails List                            -->
+      <div data-role="page" id="thumbs">
+        <div data-role="header"><h1>Image List</h1></div>
+        <div data-role="content">
+        <ul data-role="listview">
+          <li><img src="../images/falls.jpg" />Yosemite</li>
+          <li><img src="../images/peak.jpg" />Zion</li>
+          <li><img src="../images/sunstar.jpg" />Arches</li>
+      </ul></div></div>
+<!--                    Nested List                            -->
+      <div data-role="page" id="nested">
+        <div data-role="header"><h1>Nested List</h1></div>
+        <div data-role="content">
+        <ul data-role="listview">
+          <li>Hobbits<ul><li>Frodo</li><li>Sam</li><li>Bilbo</li></ul></li>
+          <li>Elves<ul><li>Legolas</li><li>Elrond</li><li>Galadriel</li></ul></li>
+          <li>Men<ul><li>Aragorn</li><li>Boromir</li><li>Theoden</li></ul></li>
+       </ul></div></div>
+<!--                    Split List                            -->
+      <div data-role="page" id="split">
+        <div data-role="header"><h1>Split List</h1></div>
+        <div data-role="content">
+        <ul data-role="listview">
+          <li><a href="#">Jeep</a><a href="#" data-icon="star">Like</a></li>
+          <li><a href="#">Ford</a><a href="#" data-icon="star">Like</a></li>
+          <li><a href="#">Chevy</a><a href="#" data-icon="star">Like</a></li>
+      </ul></div></div>
+<!--                    Divided List                            -->
+      <div data-role="page" id="divided">
+        <div data-role="header"><h1>Divided List</h1></div>
+        <div data-role="content">
+          <ul data-role="listview" data-autodividers="true">
+            <li>Alex</li><li>Alice</li><li>Brad</li><li>DaNae</li><li>David</li>
+            <li>Isaac</li><li>Jordan</li><li>Nancy</li>
+       </ul></div></div>
+<!--                    Searchable List                            -->
+      <div data-role="page" id="search">
+        <div data-role="header"><h1>Search List</h1></div>
+        <div data-role="content">
+        <ul data-role="listview" data-filter="true">
+          <li>Rome</li><li>Milan</li><li>Florence</li><li>Genoa</li><li>Venice</li>
+          <li>Naple</li><li>Balonga</li><li>Bari</li><li>Turin</li><li>Palermo</li>
+       </ul></div></div>
+    </div></div>
+  </body>
+</html>

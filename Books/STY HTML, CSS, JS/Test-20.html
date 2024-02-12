@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #20</title>
+    	<script type="text/javascript">
+		
+    	</script>
+
+		<style type="text/css">
+			fieldset
+				{
+					width:75%;
+					border:2px solid #ff0000;
+				}
+			legend
+				{
+					font-weight:bold;
+					font-size:125%;
+				}
+			label.question
+				{
+					width:225px;
+					float:left;
+					text-align:left;
+					font-weight:bold;
+				}
+			span.question
+				{
+					font-weight:bold;
+				}
+			input, textarea, select
+				{
+					border:1px solid #000;
+				}
+			#buttons
+				{
+					margin-top:12px;
+				}
+		</style>
+	</head>
+	<body style="background-color:lightblue;">
+		<h1>How's My site</h1>
+		<form name="gbForm" method="post" action="">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<p>
+					<label class="question" for="the_name">What is your name?</label>
+					<input type="text" id="the_name" name="the_name" placeholder="Please Type Your Whole Name." size="50" required autofocus>
+				</p>
+				<p>
+					<label class="question" for="the_email">What is your e-mail address?</label>
+					<input type="text" id="the_email" name="the_email" placeholder="Please Type Your Real One!" size="50" required>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Questions</legend>
+				<p>
+					<span class="question">Please check all that apply:</span>
+					<br>
+					<input type="checkbox" id="love_it" name="some_statments[]" value="I really LOVE your Website.">
+					<label for="love_it">I really LOVE your Website.</label>
+					<br>
+					<input type="checkbox" id="like_it" name="some_statments[]" value="I like your Website.">
+					<label for="">I like your Website.</label>
+					<br>
+					<input type="checkbox" id="not_bad" name="some_statments[]" value="Not Bad.">
+					<label for="not_bad">Not Bad.</label>
+					<br>
+					<input type="checkbox" id="not_good" name="some_statments[]" value="Not Good">
+					<label for="">Not Good.</label>
+					<br>
+					<input type="checkbox" id="horrible" name="some_statments[]" value="Worst Website EVER!!!!">
+					<label for="horrible">Worst Website EVER!!!!</label>
+				</p>
+				<p>
+					<label for="scale">Please rate my Website from 0 (lowest) 10 (highest).</label>
+					<input type="number" id="scale" name="scale" min="0" max="10" value="10">
+				</p>
+				<p>
+					<span class="question">Please choose one thing you love about my Website</span>
+					<br>
+					<input type="radio" id="spacecrafts" name="best_thing" value="love_spacecrafts">
+					<label for="spacecrafts">The Spacecrafts.</label>
+					<br>
+					<input type="radio" id="main_page" name="best_thing" value="love_main_page">
+					<label for="main_page">The Main Page.</label>
+					<br>
+					<input type="radio" id="pics_of_space" name="best_thing" value="love_pics_of_space">
+					<label for="pics_of_space">The Pictures of Space.</label>
+					<br>
+					<input type="radio" id="every" name="best_thing" value="love_every">
+					<label for="every">Everthing.</label>
+					<br>
+					<input type="radio" id="constellations" name="best_thing" value="love_constellations">
+					<label for="constellations">The constellations.</label>
+					<br>
+				</p>
+				<p>
+					<label for="how_improve"><span class="question">How to Improve this Website?</span></label>
+					<br>
+					<select id="how_improve" name="how_improve" size="4" multiple>
+						<option value="You can't, it can't be better.">You can't, it can't be better.</option>
+						<option value="More about Spacecrafts.">More about Spacecrafts.</option>
+						<option value="More about constellations.">More about constellations.</option>
+						<option value="More about You.">More about You.</option>
+					</select>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Free For All</legend>
+				<p>
+					<label for="message"><span class="question">Feel free to send Qyestions or Comments ect. :</span></label>
+					<br>
+					<textarea id="message" name="message" rows="7" cols="55"></textarea>
+				</p>
+			</fieldset>
+			<div id="buttons">
+				<input type="submit" value="Click Here to Submit!"> or 
+				<input type="reset" value="Erase and Start Over">.
+			</div>
+		</form>
+		<br>
+		<br>
+		
+	</body>
+</html>

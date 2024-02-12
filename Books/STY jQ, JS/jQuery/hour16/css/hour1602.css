@@ -1,0 +1,7 @@
+div { display:inline-block; }
+img { height:40px; border:3px ridge; border-radius:7px; padding:2px; }
+.map {width:220px; float:left; height:220px; border:4px groove blue; border-radius:40px; }
+#mainMap { width:400px; height:460px; }
+#smallMaps { width:460px; height:460px; }
+#controls { float:left; width:900px; }
+.buttons { cursor:pointer; }

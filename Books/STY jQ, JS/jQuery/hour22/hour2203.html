@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 22-3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <script type="text/javascript" src="./js/hour2201.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="./css/hour2201.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head> 
+  <body>
+    <div id="border"><div id="frame">
+      <div data-role="page" id="pageOne">
+        <div data-role="header"><h1>Page 1</h1>
+          <a href="#options" data-role="button" class="ui-btn-right"
+             data-rel="dialog" data-icon="gear">Options</a>
+        </div>
+        <div data-role="content">
+          <p>Silver Lake</p><img src="./images/lake.jpg" class="full" />          
+        </div>
+      </div>
+      <div data-role="page" id="pageTwo">
+        <div data-role="header"><h1>Page 2</h1>
+          <a href="#options" data-role="button" class="ui-btn-right"
+             data-rel="dialog" data-icon="gear">Options</a>
+        </div>
+        <div data-role="content">
+          <p>Zion NP</p><img src="./images/peak.jpg" class="full" />
+        </div>
+      </div>
+      <div data-role="page" id="options">
+        <div data-role="header"><h1>Options</h1></div>
+        <div data-role="content">
+          <a href="#imageDialog" data-role="button" data-rel="dialog">Switch Page</a>
+          <a href="#random" data-role="button" data-rel="dialog">Random Image</a>
+        </div>
+      </div>
+      <div data-role="page" id="imageDialog">
+        <div data-role="header"><h1>Select Page</h1></div>
+        <div data-role="content">
+          <a href="#pageOne" data-role="button"><img src="./images/lake.jpg" />Lake</a>
+          <a href="#pageTwo" data-role="button"><img src="./images/peak.jpg" />Peak</a>
+        </div>
+      </div>
+      <div data-role="page" id="random">
+        <div data-role="header"><h1>Random</h1></div>
+        <div data-role="content">
+          <img id="randomImg" class="medium"></img>
+        </div>
+      </div>
+    </div></div>
+  </body>
+</html>

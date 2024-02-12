@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #2 - W3</title>
+	  	<link rel="stylesheet" href="./css.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="dropdown">
+		    <button class="btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Hello!
+		    <span class="caret"></span></button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Matthew</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Robert</a></li>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vine</a></li>
+				<hr>
+			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Website</a></li>
+		    </ul>
+		</div>
+		<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+		<p>Click the light bulb to turn on/off the light.</p>
+		<script>
+			function changeImage() {
+			    var image = document.getElementById('myImage');
+			    if (image.src.match("bulbon")) {
+			        image.src = "pic_bulboff.gif";
+			    } else {
+			        image.src = "pic_bulbon.gif";
+			    }
+			}
+		</script>
+		
+		<?php
+			function myTest() {
+				$ex = "!";
+				echo "Hello" . $ex;
+			}
+			myTest();
+			echo "This ", "string ", "was ", "made ", "with multiple parameters.";
+		?>
+	</body>
+</html>

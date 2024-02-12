@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 17-1</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="../../jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../jquery-ui-1.10.4.custom/css/custom-theme/jquery-ui-1.10.4.custom.min.css">
+    <script>
+      $(document).ready(function(){
+        $( "#datepicker" ).datepicker();
+      });
+    </script>
+    <style>
+        .ui-menu {
+            width: 200px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="datepicker"></div>
+    <ul id="menu">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a>
+        <ul>
+          <li><a href="#">Item 3-1</a></li>
+          <li><a href="#">Item 3-2</a></li>
+          <li><a href="#">Item 3-3</a></li>
+          <li><a href="#">Item 3-4</a></li>
+          <li><a href="#">Item 3-5</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item 4</a></li>
+      <li><a href="#">Item 5</a></li>
+    </ul>
+    <script>
+        $( "#menu" ).menu();
+    </script>
+  </body>
+</html>

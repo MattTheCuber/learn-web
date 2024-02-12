@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 22-1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <script type="text/javascript" src="./js/hour2202.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="./css/hour2202.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>  
+  <body>
+    <div id="border"><div id="frame">
+      <div data-role="page" id="pageOne">
+        <div data-role="header"><h1>Page 1</h1>
+          <a href="#pageTwo" data-role="button" class="ui-btn-right" 
+             data-transition="slidefade">Next</a></div>
+        <div data-role="content">
+          <p>Flower</p><img src="./images/flower.jpg" /></div>  
+        <div data-role="footer"><h4>Footer</h4></div>  
+      </div>
+      <div data-role="page"  id="pageTwo">
+        <div data-role="header">
+          <a href="#pageOne" data-role="button" 
+             data-rel="back" data-direction="reverse">Back</a>
+          <h1>Page 2</h1>    
+          <a href="hour2201-page3.html" data-role="button" 
+             data-transition="slidefade" class="ui-btn-right">Next</a></div>
+        <div data-role="content">
+          <p>Paradise</p><img src="./images/volcano.jpg" /></div>  
+        <div data-role="footer"><h4>Footer</h4></div>  
+      </div>
+    </div></div>
+  </body>
+</html>

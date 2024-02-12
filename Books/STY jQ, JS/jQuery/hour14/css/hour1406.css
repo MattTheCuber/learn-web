@@ -1,0 +1,12 @@
+canvas.the{ height:51px; width: 206px; vertical-align:bottom; background-color:black; margin-left:10px; margin-left:10px; margin-bottom:51px; margin-top:10px;
+}
+canvas.extra{ height:51px; width: 206px; vertical-align:bottom; background-color:black; margin-left:-216px; margin-right:10px;
+}
+canvas.extra2{ height:51px; width: 206px; vertical-align:bottom; background-color:black; margin-left:-206px; margin-right:10px;
+}
+canvas.heart{ margin-left:60px; margin-bottom:51px; height:51px; width: 206px; vertical-align:bottom; background-color:black; margin-right:10px; margin-top:10px;
+}
+label, span { display:inline-block; text-align:right; width:160px;
+  font:bold 24px/50px "Arial Black"; border-bottom:2px dotted;
+}
+span{ width:50px; color:blue; }

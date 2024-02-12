@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #10.5</title>
+		<style type="text/css">
+			body
+				{
+					background-color:#fff;
+				}
+			#buttons
+				{
+					float:left;
+					z-index:1;
+				}
+			#square
+				{
+					position:absolute;
+					top:320px;
+					left:100px;
+					width:200px;
+					height:200px;
+					border:2px solid black;
+					padding:13px;
+					background-color:#e0e0e0;
+					z-index:2;
+				}
+			div
+				{
+					padding:10px;
+				}
+			hr.hr
+				{
+					width:97.9%;
+					height:5px;
+					border:5px groove black;
+					margin-top:155px;
+				}
+			div.history
+				{
+					text-align:left;
+				}
+			div.box
+				{
+					width:175px;
+					height:100px;
+					background-color:green;
+					overflow:scroll;
+					float:left;
+					border-left:5px solid #ededed;
+					border-top:5px solid #ededed;
+				}
+		</style>
+
+		<script type="text/javascript">
+			var x=100, y=320;
+			function pos(dx, dy) {
+				if (!document.getElementById) return;
+				x +=30*dx;
+				y +=30*dy;
+				obj = document.getElementById("square");
+				obj.style.top=y + "px";
+				obj.style.left=x + "px";
+			}
+			function hideSquare() {
+				if (!document.getElementById) return;
+				obj = document.getElementById("square");
+				obj.style.display="none";
+			}
+			function showSquare() {
+				if (!document.getElementById) return;
+				obj = document.getElementById("square");
+				obj.style.display="block";
+			}
+
+			function 
+		</script>
+	</head>
+	<body>
+		<h1>Positioning Elements</h1>
+		<div class="history">
+			Going back in history.
+		</div>
+		<div align="center" class="box">
+				<button align="center" align="center" type="button" onclick="history.back();">Back in hisory once</button>
+				<button align="center" align="center" type="button" onclick="history.back(-2);">Back in hisory twice</button>
+				<button align="center" type="button" onclick="history.back(-3);">Back in hisory thrice</button>
+				<button align="center" type="button" onclick="history.back(-4);">Back in hisory four times</button>
+				<button align="center" type="button" onclick="history.back(-5);">Back in hisory five times</button>
+				<br>
+				<button align="center" type="button" onclick="history.back(-6);">Back in hisory six times</button>
+				<button align="center" type="button" onclick="history.back(-7);">Back in hisory seven times</button>
+				<button align="center" type="button" onclick="history.back(-8);">Back in hisory eight times</button>
+				<button align="center" type="button" onclick="history.back(-9);">Back in hisory nine times</button>
+				<button align="center" type="button" onclick="history.back(-10);">Back in hisory ten times</button>
+				<br>
+				<br>
+				<button align="center" type="button" onclick="history.forward();">Forward in hisory once</button>
+				<button align="center" type="button" onclick="history.forward(2);">Forward in hisory twice</button>
+				<button align="center" type="button" onclick="history.forward(3);">Forward in hisory thrice</button>
+				<button align="center" type="button" onclick="history.forward(4);">Forward in hisory four times</button>
+				<button align="center" type="button" onclick="history.forward(5);">Forward in hisory five times</button>
+				<br>
+				<button align="center" type="button" onclick="history.forward(6);">Forward in hisory six times</button>
+				<button align="center" type="button" onclick="history.forward(7);">Forward in hisory seven times</button>
+				<button align="center" type="button" onclick="history.forward(8);">Forward in hisory eight times</button>
+				<button align="center" type="button" onclick="history.forward(9);">Forward in hisory nine times</button>
+				<button align="center" type="button" onclick="history.forward(10);">Forward in hisory ten times</button>
+		</div>
+		<div id="buttons">
+			<br>
+			<button style="margin-left:300px;" type="button" name="left" onclick="pos(-1,0)">Left</button>
+			<button type="button" name="right" onclick="pos(1,0)">Right</button>
+			<button type="button" name="up" onclick="pos(0,-1)">Up</button>
+			<button type="button" name="down" onclick="pos(0,1)">Down</button>
+			<button type="button" name="hide" onclick="hideSquare()">Hide</button>
+			<button type="button" name="show" onclick="showSquare()">Show</button>
+		</div>
+		<hr class="hr">
+		<div id="square">
+			This is an absolutely positioned layer that you can move using the buttons above.
+		</div>
+
+	</body>
+</html>

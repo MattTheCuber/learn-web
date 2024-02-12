@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #12</title>
+		<script type="text/javascript">
+			function displayKey(e) {
+				//which key
+				if (e.keyCode) {
+					var keycode=e.keyCode;
+				} else {
+					var keycode=e.which;
+				}
+				character=String.fromCharCode(keycode);
+
+				//finds out paragraph
+				var keys_para = document.getElementById('keys');
+
+				//add character
+				keys_para.innerHTML += character;
+			}
+		</script>
+	</head>
+	<body onload="alert('Website loading complete.')" onunload="alert('Why did you leave the page?')" onkeypress="displayKey(event)" style="background-color:#fafafa;">
+		<h2>Mouse Click Test 1</h2>
+		<p>Click the mouse on the test link below. A message will tell you which button was clicked.</p>
+		<h3><a href="#" id="testlink">Test link</a></h3>
+		<div id="testarea"></div>
+		<script type="text/javascript">
+			function mousestatus(e) {
+				if (!e) e = window.event;
+				btn = e.button;
+				whichone = (btn < 2) ? "Left" : "Right";
+				message = e.type + " : " + whichone + "<br>";
+				document.getElementById('testarea').innerHTML += message;
+			}
+			obj = document.getElementById('testlink');
+
+			obj.onmousedown = mouseStatus;
+			obj.onmouseup = mouseStatus;
+			obj.onclick = mouseStatus;
+			obj.ondblclick = mouseStatus;
+		</script>
+		<br>
+		<h2>Mouse Click Test 2</h2>
+		<a onmousedown="alert('You are clicking the mouse button')" href="./Test-12.html">Test 12</a>
+		<a onmouseup="alert('You let go of the mouse button!')" href="./Test-12.html">Test 12 again</a>
+		<img scr="" alt="Double click these words" ondblclick="alert('You double clicked the words')">
+		<br>
+		<h2>Write some words</h2>
+		<p id="keys"></p>
+		<h2></h2>
+	</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #1 - W3</title>
+		<style type="text/css">
+			div.div:hover
+				{
+    				transform: rotate(24573872370deg);
+    				transition-duration:1s;
+				}
+			div.div
+				{
+					width:250px;
+    				height:450px;
+    				background-color:green;
+    				margin-left:100px;
+					border: 10px solid transparent;
+    				padding: 15px;
+				    border-image: url(img1.jpg) 40 stretch;
+				}
+			div.div1
+				{
+					background-color:rgba(255, 0, 0, 0.3);
+					box-shadow:10px 10px 5px grey;
+					border-radius: 25px;
+					background:-webkit-linear-gradient(right, darkred, firebrick, maroon);
+					background: -o-linear-gradient(right, darkred, firebrick, maroon);
+					background: -moz-linear-gradient(left, darkred, firebrick, maroon);
+					background: linear-gradient(left, darkred, firebrick, maroon);
+				}
+			div.div1:hover
+				{
+					transform: rotate(1deg);
+					transition-duration:.1s;
+				}
+			div.div3
+				{
+					width:1000px;
+					height:500px;
+					background: 
+					-moz-linear-gradient(left, red, aliceblue, antiquewhite, aqua, aquamarine, azure, beige, bisque, black, blanchedalmond, blue, blueviolet, brown, burlywood, cadetblue, chartreuse, chocolate, coral, cornflowerblue, cornsilk, crimson, cyan, darkblue, darkcyan, darkgoldenrod, darkgray, darkgreen, darkkhaki, darkmagenta, darkolivegreen, darkorange, darkorchid, darkred, darksalmon, darkseagreen, darkslateblue, darkslategray, darkturquoise, darkviolet, deepskyblue, dimgray, dodgerblue, firebrick, floralwhite, forestgreen, fuchsia, gainsboro, ghostwhite, gold, goldenrod, gray, green, greenyellow, honeydew, indigo, ivory, khaki, lavender, lavenderblush, lawngreen, lemonchiffon, lightblue, lightcoral, lightcyan, lightgoldenrodyellow, lightgray, lightgreen, lightsalmon, lightseagreen, lightskyblue, lightslategray, lightslategray, lightsteelblue, lightyellow, lime, limegreen, linen, magenta, maroon, mediumaquamarine, mediumblue, mediumorchid, mediumpurple, mediumseagreen, mediumslateblue, mediumspringgreen, mediumturquoise, midnightblue, mintcream, mistyrose, moccasin, navajowhite, navy, oldlace, olive, olivedrab, orange, orangered, orchid, palegoldenrod, palegreen, paleturquoise, papayawhip, peru, plum, powderblue, purple, rebeccapurple, rosybrown, royalblue, saddlebrown, salmon, sandybrown, seagreen, seashell, sienna, silver, skyblue, slateblue, slategray, snow, springgreen, steelblue, tan, teal, thistle, tomato, turquoise, violet, wheat, white, whitesmoke, yellow, yellowgreen, pink, lightpink, hotpink, deeppink, mediumvioletred, palevioletred, indianred
+					);
+				}
+			div.div4
+				{
+					width:25%;
+					background: 
+					-moz-linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+					-webkit-linear-gradient(45, red, orange, yellow, green, blue, purple);
+					-o-linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+					linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+				}
+			div.div5 {
+			  background: -webkit-radial-gradient(red, green, blue);
+			  background: -o-radial-gradient(red, green, blue);
+			  background: -moz-radial-gradient(red, green, blue);
+			  background: radial-gradient(red, green, blue);
+			  width:500px;
+			  height:500px;
+			    resize: both;
+			    overflow: auto;
+			}
+			div.div5:hover
+			{
+				-ms-transform: scale(2,3); /* IE 9 */
+			    -webkit-transform: scale(2,3); /* Safari */
+			    transform: scale(2,3);
+			}
+			div.div6 {
+			    width: 100px;
+			    height: 100px;
+			    background: green;
+			    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+			    transition: width 2s, height 2s, transform 2s;
+			}
+
+			div.div6:hover {
+			    width: 300px;
+			    height: 300px;
+			    -webkit-transform: rotate(180deg); /* Safari */
+			    transform: rotate(180deg);
+			}
+		div.div7 {
+		    width: 100px;
+		    height: 100px;
+		    background-color: red;
+		    position: relative;
+		    -webkit-animation-name: example;
+		    -webkit-animation-duration: 4s;
+		    -webkit-animation-iteration-count: 3;
+		    animation-name: example;
+		    animation-duration: 4s;
+		    animation-iteration-count: 3;
+		}
+		@-webkit-keyframes example {
+		    0%   {background-color:red; left:0px; top:0px;}
+		    25%  {background-color:yellow; left:200px; top:0px;}
+		    50%  {background-color:blue; left:200px; top:200px;}
+		    75%  {background-color:green; left:0px; top:200px;}
+		    100% {background-color:red; left:0px; top:0px;}
+		}
+		@keyframes example {
+		    0%   {background-color:red; left:0px; top:0px;}
+		    25%  {background-color:yellow; left:200px; top:0px;}
+		    50%  {background-color:blue; left:200px; top:200px;}
+		    75%  {background-color:green; left:0px; top:200px;}
+		    100% {background-color:red; left:0px; top:0px;}
+		}
+		progress:hover
+			{
+
+			}
+		</style>
+</head>
+	<body>
+		<div class="div1">
+			<b style="font-size:25px; color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">Hello!</b>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="div">
+			Boo
+		</div>
+		<br>
+		<br>
+		<br>
+		Password: <input type="password" id="myPsw">
+		<button onclick="myFunction1()">Submit</button>
+		<p>
+			<script>
+				function myFunction1() {
+				    var x = document.getElementById("myPsw").value;
+				    var answer = "192.168.10.200";
+				    var please = "please";
+				    var why  = "password";
+				    var matt = "matt";
+				    if (x == answer) {
+				    	document.getElementById("demo").innerHTML = ("Aproved!");
+				    } else {
+				    	document.getElementById("demo").innerHTML = ("Access denied.");
+				    }
+				}
+			</script>
+		</p>
+		<br>
+		Select your favorite color: <input type="color" id="myColor">
+		<p>Click the "Try it" button to get the color of the color picker.</p>
+		<button onclick="myFunction2()">Try it</button>
+		<p id="demo2"></p>
+		<script>
+			function myFunction2() {
+			    var x = document.getElementById("myColor").value;
+			    document.getElementById("demo2").innerHTML = x;
+			}
+		</script>
+		<br>
+		<meter value="2" min="0" max="10">2 out of 10</meter><br>
+		<meter value="0.6">60%</meter>
+		<progress value="9" max="10">Hello</progress>
+		<br>
+		<a name="calc"></a>
+		<h2>Calculator</h2>
+		<table style="width:75%; border:5px solid #000; text-align:center;">
+			<tr>
+				<td>
+					<input type="number" id="1">
+					<br>
+					<select id="sl">
+					  	<option id="plus" value="+">Plus</option>
+					  	<option id="minus" value="-">Minus</option>
+					  	<option id="divide" value="/">Divide</option>
+					  	<option id="multiply" value="*">Mulitiply</option>
+					</select>
+					<br>
+					<input type="number" id="2">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" onclick="calculate();">Calculate</button>
+					&nbsp;<button type="button" onclick="window.location.reload(true);">Erase</button>
+					&nbsp;Answer: <span style="border:1px solid #AAAAAA;" id="answer"></span>
+				</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			function calculate() {
+				var o = document.getElementById("sl").value;
+				var one = document.getElementById("1").value;
+				var two = document.getElementById("2").value;
+				if (o == "/") {
+					document.getElementById("answer").innerHTML = one / two;
+				} else if (o == "+") {
+					document.getElementById("answer").innerHTML = parseFloat(one) + parseFloat(two);
+				} else if (o == "-") {
+					document.getElementById("answer").innerHTML = one - two;
+				} else if (o == "*") {
+					document.getElementById("answer").innerHTML = one * two;
+				}
+			}
+		</script>
+		<br>
+		<div class="div3"></div>
+		<div class="div35"></div>
+		<div style="width:500px; height:1000px;" class="div4"></div>
+		<div class="div7"></div>
+		<div class="div5"></div>
+		<div class="div6"></div>
+	</body>
+</html>

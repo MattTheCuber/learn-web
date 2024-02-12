@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #13</title>
+		<script type="text/javascript">
+			function newWindow() {
+				window.open("", "big", "status=0");
+			}
+			function doIt() {
+				if ((document.changeform.w.value) && (document.changeform.h.value)) {
+					NewWin.resizeTo(document.changeform.w.value, document.changeform.h.value);
+				}
+				if ((document.form1.x.value) && (document.form2.y.value)) {
+					NewWin.moveTo(document.changeform.x.value, document.changeform.y.value);
+				}
+			}
+			function timeThingy() {
+				window.setTimeout("alert('Times up!')",100);
+			}
+			function timedWords() {
+				window.setTimeout("alert('Times up!')",2593);
+			}
+			var counter = 0;
+			timeoutID = window.setTimeout("Update();",2000);
+
+			function Update() {
+				counter++;
+				var textField = document.getElementById("showText");
+				textField.innerHTML = "The counter is now at " + counter;
+
+				timeoutID = window.setTimeout("Update();",1000);
+			}
+		</script>
+	</head>
+	<body onload="NewWin=window.open('','NewWin','width=200,height=100');">
+		<script type="text/javascript">
+			//made up test
+			document.write("<h2>");
+			document.write("Random JavaScript number: " + Math.random());
+			document.write("</h2>")
+		</script>
+		<h2>Try opening new windows and other stuff like that.</h2>
+		<br>
+		<button type="button" onclick="NewWinso = window.open('','NewWin','toolbar=no,status=no,width=200,hieght=100');">Open new Window</button>
+		<button type="button" onclick="NewWinso.close();">Close new Window</button>
+		<!--<button type="button" onclick="window.self.close();">Close this Window</button>-->
+		<br>
+		<form name="changeform">
+			<p><strong>Resize to:</strong> <br>
+			<input size="5" type="text" name="w">pixels wide and
+			<input size="5" type="text" name="h">pixels high </p>
+			<p><strong>-- AND/OR --</strong></p>
+			<p><strong>Move to:</strong> <br>
+			x-poistion: <input size="5" type="text" name="x">
+			y-poistion: <input size="5" type="text" name="y"> </p>
+			<div><input type="button" value="Change Window" onclick="doIt();"></div>
+			<h2>Timers</h2>
+			<button type="button" onclick="timeThingy();">Start timer for 10 seconds</button>
+			<!--<br>
+			<br>
+			<div onmouseover="timedWords();">Hover over these words for <i>2.593</i> seconds.</div>-->
+			<br>
+			<br>
+			<p id="showText"></p>
+			<div>
+				<button type="button" onclick="counter=0; Update();">RESTART</button>
+				<button type="button" onclick="window.clearTimeout(ID);">STOP</button>
+			</div>
+		</form>
+	</body>
+</html>

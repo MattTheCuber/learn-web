@@ -1,0 +1,7 @@
+div { display:inline-block;}
+#viewer { background-color:black; border:10px solid black; }
+#photo {
+  height:500px; width:700px;
+  display:table-cell; vertical-align:middle; text-align:center;
+}
+#photo img { border:5px ridge white; box-shadow: 10px 10px 5px #888888;}

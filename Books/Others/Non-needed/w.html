@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Quiz</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Hunter Education online home study course to be combined with Hunter's Skill Course">
+<meta name="keywords" content="hunt, hunting, hunter, education, training, online, course">
+<meta name="author" content="">
+<link rel="stylesheet" href="../hedfont.css" type="text/css">
+<script language="Javascript"></script>
+<script language="Javascript" src="../scripts/behActions.js"></script>
+<script language="Javascript" src="../scripts/behCourseBuilder.js"></script>
+<script language="Javascript" src="../scripts/interactionClass.js"></script>
+<script language="Javascript" src="../scripts/elemInptClass.js"></script>
+</head>
+<body bgcolor="#FFFFFF" onLoad="MM_initInteractions()" background="../images/backgrnd_grn.jpg">
+<table width="95%"  border="2" cellpadding="10" bordercolor="#FF3300" bgcolor="#FFFFFF" align="center">
+  <tr>
+    <td> <p align="left"><img src="../images/header_logo.gif" alt="IHEA logo" width="130" height="78" align="left"> 
+        <br>
+        <img src="../images/popquiz.gif" alt="pop quiz" width="309" height="50"></p>
+      <hr>
+      <p align="left"><span name="G01question"><font face="Arial, Helvetica, sans-serif"><span name="G01question">Which 
+        of these things should a responsible hunter do when hunting on private 
+        land? (check all that apply)</span></font> </span> </p>
+      <div name="G01Layer"><form name="G01choices">
+          <span name="G01choice1"> 
+          <input name="G01choice1Inp" type="checkbox" onClick="G01.e['choice1'].update()">
+          <font face="Arial, Helvetica, sans-serif">Pick up empty shell cases 
+          and cartridges</font>.<br>
+          </span> <span name="G01choice2"> </span> <span name="G01choice3"> 
+          <input name="G01choice3Inp" type="checkbox" onClick="G01.e['choice3'].update()">
+          <font face="Arial, Helvetica, sans-serif">Get permission from the landowner 
+          on the morning the season opens</font>.<br>
+          </span> <span name="G01choice4"> 
+          <input name="G01choice4Inp" type="checkbox" onClick="G01.e['choice4'].update()">
+          <font face="Arial, Helvetica, sans-serif">Leave gates as you found them</font>.<br>
+          </span> <span name="G01choice5"> 
+          <input name="G01choice5Inp" type="checkbox" onClick="G01.e['choice5'].update()">
+          <font face="Arial, Helvetica, sans-serif">Report vandalism.</font><br>
+          <input name="G01choice6Inp" type="checkbox" onClick="G01.e['choice6'].update()">
+          <font face="Arial, Helvetica, sans-serif">Shoot near livestock.</font><br>
+          <input name="G01choice7Inp" type="checkbox" onClick="G01.e['choice7'].update()">
+          <font face="Arial, Helvetica, sans-serif">Send a thank you note.</font><br>
+          <input name="G01choice8Inp" type="checkbox" onClick="G01.e['choice8'].update()">
+          <font face="Arial, Helvetica, sans-serif">Offer to share your game with 
+          the landowner.</font></span> 
+        </form>
+        <form name="G01controls">
+          <input name="G01judge" type="button" value="Check My Answer" onClick="MM_judgeInt('G01')">
+          <input name="G01reset" type="button" value="Reset" onClick="MM_resetInt('G01','reset')">
+        </form>
+      </div>
+      <script language="Javascript">
+  <!--
+  // Copyright 1998,1999 Macromedia, Inc. All rights reserved.
+  function newG01() {
+    G01 = new MM_interaction('G01',0,1,1,null,0,0,0,'','','c','',0);
+    G01.add('inpt','choice1',0,1,1,0);
+    G01.add('inpt','choice2',0,1,0,0);
+    G01.add('inpt','choice3',0,1,0,0);
+    G01.add('inpt','choice4',0,1,1,0);
+    G01.add('inpt','choice5',0,1,1,0);
+  G01.add('inpt','choice6',0,1,0,0);
+  G01.add('inpt','choice7',0,1,1,0);
+  G01.add('inpt','choice8',0,1,1,0);
+    G01.init();
+    G01.am('segm','Segment: Check Time_',1,1);
+    G01.am('cond','Time At Limit_','G01.timeAtLimit == true',0);
+    G01.am('actn','Popup Message','MM_popupMsg(\'You are out of time\')','pm');
+    G01.am('actn','Set Interaction Properties: Disable Interaction','MM_setIntProps(\'G01.setDisabled(true);\')','sp');
+    G01.am('end');
+    G01.am('segm','Segment: Correctness_',1,0);
+    G01.am('cond','Correct_01','G01.correct == true',0);
+    G01.am('actn','Go To URL','MM_goToURL(\'parent\',\'05right.htm\')','');
+    G01.am('end');
+    G01.am('cond','Incorrect_','G01.correct == (false)',0);
+    G01.am('actn','Go To URL','MM_goToURL(\'parent\',\'05wrong.htm\')','');
+    G01.am('end');
+    G01.am('cond','Unknown Response_','G01.knownResponse == false',0);
+    G01.am('actn','Popup Message','MM_popupMsg(\'Unknown Response\')','');
+    G01.am('end');
+    G01.am('segm','Segment: Check Tries_',1,1);
+    G01.am('cond','Tries At Limit_','G01.triesAtLimit == true',0);
+    G01.am('actn','Popup Message','MM_popupMsg(\'You are out of tries\')','pm');
+    G01.am('actn','Set Interaction Properties: Disable Interaction','MM_setIntProps(\'G01.setDisabled(true);\')','sp');
+    G01.am('end');
+  }
+  if (window.newG01 == null) window.newG01 = newG01;
+  if (!window.MM_initIntFns) window.MM_initIntFns = ''; window.MM_initIntFns += 'newG01();';
+//-->
+</script>
+      <img src="../images/nav_plan_back.gif" width="525" height="40" usemap="#Map2" alt="progress bar" border="0"> 
+      <map name="Map2">
+        <area shape="rect" coords="1,1,82,40" href="../index.htm" alt="home">
+        <area shape="rect" coords="260,0,338,40" href="02privatelands.htm">
+      </map> <cbi-select object="G01"> </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #15</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+	</head>
+	<body>
+		<button onclick="new Effect.Fade($('testarea'))">Fade Out</button>
+		<button onclick="new Effect.Appear($('testarea'))">Fade In</button>
+		<button onclick="new Effect.Highlight($('testarea'))">Highlight</button>
+		<button onclick="new Effect.Shake($('testarea'))">Shake</button>
+		<button onclick="new Effect.BlindDown($('testarea'))">Blind Down</button>
+		<button onclick="new Effect.DropOut($('testarea'))">Drop Out</button>
+		<button onclick="new Effect.Fold($('testarea'))">Fold</button>
+		<button onclick="new Effect.Grow($('testarea'))">Grow</button>
+		<button onclick="new Effect.Puff($('testarea'))">Puff</button>
+		<button onclick="new Effect.Pulsate($('testarea'))">Pulsate</button>
+		<button onclick="new Effect.Shrink($('testarea'))">Shrink</button>
+		<button onclick="new Effect.Squish($('testarea'))">Squish</button>
+		<button onclick="new Effect.SwitchOff($('testarea'))">Switch Off</button>
+		<br>
+		<button onclick="histroy.back(1);">Back</button>
+		<hr>
+		<div id="testarea" style="background-color:#CCC; margin:10px; padding:10px;">
+			Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine Matthew Robert Vine.
+		</div><!--
+		<br>
+		<script type="text/javascript">
+			alert("test1");
+			Array.prototype.shuffle = function() {
+			  return this.sortBy(Math.random);
+			}
+			alert("test2");
+			function() {
+				function foo() {
+			    	$('scripty_morph_demo').select('div').shuffle().each(function(e, i) {
+			      	e.morph('top:' + i*e.getHeight() + 'px', { duration: 0.4 }); 
+				}
+			}
+			$('scripty_morph_demo').observe('click', foo);
+			foo();
+			alert("test3");
+		</script>-->
+			<p id="highlight_demo" style="padding:10px; margin:10px; border:1px solid #ccc; background:#ffffff;">
+				<a href="#" onclick="new Effect.Highlight(this.parentNode, { startcolor: '#a7ff0f', endcolor: '#ffffff' }); return false;">
+			    Highlight this box!
+			  </a>
+			</p>
+			<div id="morph_demo" style="background:#CCC; margin:10px; border:3px solid black; width:100px; height:100px;"></div>
+			<ul>
+			  	<li><a href="#" onclick="$('morph_demo').morph('margin-left:500px; margin-top:30px; margin-bottom:10px; margin-right:10px; background:#1a6eff; border:54px; width:387px; height:251px;'); return false;">Morph!</a></li>
+			  	<li><a href="#" onclick="$('morph_demo').morph('margin-left:50px; margin-top:25px; background:#d60000; border:112px; width:212px; height:189px;'); return false;">Morph again!</a></li>
+			  	<li><a href="#" onclick="$('morph_demo').morph('margin-left:311px; margin-right:34; margin-bottom:1px; margin-top:64px; background:#db3dff; border:31px; width:500px; height:100px;'); return false;">Morph again!</a></li>
+
+			  	<li><a href="#" onclick="$('morph_demo').morph('margin:10px; hieght:100; border:3px solid black; background:#CCC; width:100px;'); return false;" >Reset.</a></li>
+			</ul>
+			<br>
+			<div id="appear_demo" style="margin:10px; display:none; width:100px; height:100px; background:#d6b300; border:3px solid #000000;"></div>
+			<ul>
+			  <li><a href="#" onclick="$('appear_demo').appear(); return false;">Click here!</a></li>
+			  <li><a href="#" onclick="$('appear_demo').hide(); return false;">Reset.</a></li>
+			</ul>
+	</body>
+</html>

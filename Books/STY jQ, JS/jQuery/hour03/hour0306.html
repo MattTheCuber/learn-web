@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<!--<svg xmls="http://www.w3.org/2000/svg" version="1.1" height="200">
+			<ellipse cx="100" cy="100" rx="80" ry="50"
+				stroke="black" stroke-width="2" fill="red" />
+			<polygon points="100,10 40,180 110,120 160,180"
+			    style="fill:gold; stroke:black; stroke-width:5; fill-rule:evenodd;" />
+		</svg>-->
+		<form>
+			<fieldset>
+				<legend>Contact Info:</legend>
+				Name: <input type="text" name="name" /><br />
+				Address: <input type="text" name="name" />
+				<select name="state">
+					<option value=""UT>Utah</option>
+					<option value="CA">California</option>
+					<option value="NY">New York</option>
+				</select>
+			</fieldset>
+			<input id="maleRB" type="radio" name="gender" value="male" />
+			<label for="maleRB">Male</label>
+			<input id="femaleRB" type="radio" name="gender" value="female" />
+			<label for="femaleRB">Female</label><br />
+			<textarea rows="10" cols="30">Comments</textarea><br />
+			<input id='newsCB' type="checkbox" name="news" value="news" />
+				<label for="newsCB">
+					I would like to subscribe to the newsletter.
+				</label><br />
+				<button type="submit" name="SubmitButton" value="Submit">Submit</button>
+				<button type="reset" name="resetButton" value="Reset">Reset</button>
+		</form>
+	</body>
+</html>

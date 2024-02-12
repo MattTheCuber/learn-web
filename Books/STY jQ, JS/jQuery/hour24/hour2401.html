@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 24-1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>$(document).ready(function() { checkForMobile(); });</script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="border"><div id="frame">      
+      <div data-role="page" id="pageOne">
+      <div data-role="header"><h1>Text Input</h1></div>
+      <div data-role="content">
+        <div data-role="fieldcontain" class="ui-hide-label">
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search" value="" />
+        </div>
+        <div data-role="fieldcontain" class="ui-hide-label">
+          <label for="username">Name</label>
+          <input type="text" name="username" id="username" placeholder="your name here"/>
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" value="" placeholder="some title"/>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" value="" placeholder="email"/>
+        </div>
+        <label for="area">Textarea:</label>
+        <textarea name="textarea" id="area" data-theme="a">
+        Simple text area input
+        </textarea>
+      </div>
+    </div></div>
+  </body>
+</html>

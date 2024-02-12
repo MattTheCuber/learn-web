@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 23-4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>$(document).ready(function() { checkForMobile(); });</script>
+    <style>img {width:200px; }</style>
+  </head>
+  <body>
+    <div id="border"><div id="frame">      
+      <div data-role="page" id="pageOne">
+      <div data-role="header"><h1>Page</h1></div>
+      <div data-role="content">
+        <a data-role="button" href="#config" data-icon="bars">Configuration</a>
+      </div>
+        <div data-role="panel" id="config" data-position="right" data-display="reveal">
+          <div data-role="header" data-theme="a"><h3>Panel</h3></div>
+          <h3>Settings</h3>
+          <label for="Option1">Option 1</label>
+          <input type="checkbox" id="Option1"></input>
+          <label for="Option2">Option 2</label>
+          <input type="checkbox" id="Option2"></input>
+          <a  data-role="button" data-icon="delete" data-rel="close" data>Close Config</a>
+        </div>
+      </div>
+    </div></div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.feature-img
+  width: 100%
+.basic-info
+  .about
+    margin-top: 65px
+    margin-left: 10%
+    position: absolute
+    width: 45%
+    h4
+      font-family: $sans-serif-2
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 21px
+    p
+      font-family: monospace
+      font-size: 17px
+      a
+        +link()
+
+  .call-to-action
+    margin-top: 100px
+    position: absolute
+    margin-left: 57.5%
+    width: 30%
+    background: $brand-dark
+    color: $brand-light
+    padding: 5px 25px 30px 30px
+    box-sizing: border-box
+    h3
+      font-size: 22px
+      font-family: $sans-serif-2
+      text-transform: uppercase
+      font-weight: bold
+    button
+      background: $brand-primary
+      font-size: 20px
+      padding: 10px
+      box-sizing: border-box
+      color: white
+      border: 1px solid darken($brand-primary, 4%)
+      border-radius: 5px
+      cursor: pointer
+      &:hover
+        background: darken($brand-primary, 10%)
+        border-color: darken($brand-primary, 14%)
+.widgets
+  margin-top: 400px
+  background-color: #d9d9d9
+  font-family: $sans-serif-2
+  .widget-container
+    margin: 0 auto
+    padding-left: 15px
+  h3
+    font-size: 30px
+    padding-top: 30px
+    margin-left: 45px
+    text-transform: uppercase
+    border-bottom: 1.5px solid $brand-dark
+    width: 93.5%
+  .widget
+    width: 30%
+    display: inline-block
+    margin: 0 auto
+    padding: 30px 0 30px 30px
+    h4
+      text-transform: uppercase
+      font-size: 19px
+    p
+      font-size: 17px
+      font-family: monospace

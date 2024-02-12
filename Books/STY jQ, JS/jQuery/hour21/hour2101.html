@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 21-1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../jquery.mobile-custom.min.css" />
+    <script>
+      function checkForMobile (){
+        if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)){
+          $("#border").addClass("border");
+          $("#frame").addClass("frame");}
+      }
+      $(document).ready(function() {
+        checkForMobile();
+      });
+    </script>
+    <style>
+      .border { background-image:url("./images/phone.png"); height:700px; width:350px;}
+      .frame { height:475px; width:267px; margin-top:112px; margin-left:40px; 
+        position:absolute; overflow:hidden; }
+      p { text-align:center; font:italic 45px Helvitica; color:blue; margin:5px; }
+    </style>
+  </head>  
+  <body>
+    <div id="border"><div id="frame">
+      <div data-role="page">
+        <div data-role="header" data-theme="b"><h1>Teach</h1></div>
+        <div data-role="content"> 
+          <p>jQuery</p><p>and</p><p>JavaScript</p><p>In</p><p>24</p><p>Hours</p>
+        </div>  
+        <div data-role="footer" data-theme="b"><h4>Yourself</h4></div>  
+      </div>
+    </div></div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hour 24-3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../../jquery.min.js"></script>
+    <script type="text/javascript" src="./js/initmobile.js"></script>
+    <script type="text/javascript" src="../../jquery.mobile-custom.min.js"></script>
+    <link rel="stylesheet" href="../../Mobile/jquery.mobile.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/hour2403.js"></script>
+    <link rel="stylesheet" href="css/hour2403.css" />
+  </head>
+  <body>
+    <div id="border"><div id="frame">      
+      <div data-role="page" id="pageOne">
+      <div data-role="header"><h1>Buttons</h1></div>
+      <div data-role="content">
+        <div id="imgFrame"><img src="./images/peak.jpg" /></div>
+        <div data-role="fieldcontain">
+          <label for="sizeSlide">Zoom</label>
+          <input type="range" name="sizeSlide" id="sizeSlide" 
+            value="100" min="50" max="200" data-mini="true"  />
+          <label for="fadeSlide">Fader</label>
+          <input type="range" name="fadeSlide" id="fadeSlide" data-highlight="true"
+            value="1" min="0" max="1" step=".05" data-mini="true" />
+        </div>
+        <div data-role="fieldcontain">
+          <label for="flip">Image</label>
+          <select name="flip" id="flip" data-role="slider">
+            <option value="off">Hide</option>
+            <option value="on">Show</option>
+          </select> 
+        </div>
+      </div>
+    </div></div>
+  </body>
+</html>

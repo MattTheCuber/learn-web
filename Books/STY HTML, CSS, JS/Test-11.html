@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Test #11</title>
+		<script type="text/javascript" src="./test11.js"></script>
+	</head>
+	<body style="background-color:#fcfcfc;">
+		<script type="text/javascript">
+			function addname() {
+				if (!document.getElementById) return;
+				var sentence=document.addingname.sentence.value;
+				var listItem = document.createElement("li");
+				var node=document.createTextNode(" " + sentence + " ");
+				listItem.appendChild(node);
+				document.getElementById("paragraph1").appendChild(listItem);
+				document.addingname.sentence.value="";
+			}
+
+			//create the array
+			names = new Array();
+			var i = 0;
+
+			//loop
+			do {
+				next = window.prompt("Enter the some names, or click cancel to stop", "");
+				if (next > " ") names[i] = next;
+				i = i + 1;
+			} while (next > " ");
+
+			document.write("<h2><u>" + (names.sort().length) + "</u> names entered at first.</h2>");
+
+			//show names
+			document.write("<ol id=\"paragraph1\">");
+			for (i in names) {
+				document.write("<li>" + names[i]  + "</li>");
+			}
+
+			document.write("</ol>")
+		</script>
+
+		<p><h2>Add more names!</h2></p>
+		<form name="addingname">
+			<input type="text" name="sentence" size="65">
+			<button type="button" onclick="addname()">Add!</button>
+		</form>
+		<script type="text/javascript">
+			timeGreet();
+		</script>
+		<p>Who are you?</p>
+		<button type="button" onclick="Greet('Daddy W. Vine');">I am Daddy</button>
+		<button type="button" onclick="Greet('Mommy G. Vine');">I am Mommy</button>
+		<button type="button" onclick="Greet('Obrianna M. Vine');">I am Obrianna</button>
+		<button type="button" onclick="Greet('Danielle M. Vine');">I am Danielle</button>
+		<button type="button" onclick="Greet('Julia M. Vine');">I am Julia</button>
+		<button type="button" onclick="Greet('Rachel M. Vine');">I am Rachel</button>
+		<button type="button" onclick="test1();">I am Matthew</button>
+		<button type="button" onclick="Greet('Elias D. Vine');">I am Elias</button>
+		<button type="button" onclick="m_l();">I am Lydia</button>
+		<button type="button" onclick="m_l();">I am Mercy</button>
+		<p>Why are you here?</p>
+		<button type="button" onclick="Have_fun('fun stuff')">For Fun!</button>
+		<button type="button" onclick="test1()" onclick="Have_fun('nothing')">No reason.</button>
+		<button type="button" onclick="Have_fun_r('reading')">For reading.</button>
+		<br>
+		<br>
+		<br>
+		<script type="text/javascript" src="./cards.js"></script>
+		<h1>
+			Beyond this point is an area where all the mysteries of the universe will be revealed.
+			<br>
+			Click Yes if you would like to continue.
+		</h1>
+		<br>
+		<button id="button1" onmouseover="switch1()" type="button" onclick="test1();">Yes</button>
+		<button id="button2" onmouseover="switch2()" type="button" onclick="test1();">No</button>
+		<br>
+		<br>
+		<p><h1>Here is some math:</h1></p>
+		<script type="text/javascript">
+			//average
+			var score = Average(1,3,6,9,12,23,35,47,59,63,75,84,98,109,116,123,145,168,176,187,189,194,199,205,208,216);
+			//var score = Average5(1,3,6,9,12);
+			document.write("The average of 1, 3, 6, 9, 12, 23, 35, 47, 59, 63, 75, 84, 98, 109, 116, 123, 145, 168, 176, 187, 189, 194, 199, 205, 208, and 216 is: <strong>" + score + "</strong>.");
+
+			//PI
+			document.write("<br>PI = " + Math.PI);
+			document.write("<br>PI&#178;= " + Math.pow(Math.PI,2));
+			document.write("<br>PI&#179; = " + Math.pow(Math.PI,3));
+			document.write("<br>PI<sup>4</sup> = " + Math.pow(Math.PI,4));
+			document.write("<br>PI<sup>5</sup> = " + Math.pow(Math.PI,5));
+			document.write("<br>PI<sup>6</sup> = " + Math.pow(Math.PI,6));
+			document.write("<br>PI<sup>7</sup> = " + Math.pow(Math.PI,7));
+			document.write("<br>PI<sup>8</sup> = " + Math.pow(Math.PI,8));
+			document.write("<br>PI<sup>9</sup> = " + Math.pow(Math.PI,9));
+			document.write("<br>PI<sup>10</sup> = " + Math.pow(Math.PI,10));
+
+			document.write("<br><br>e = " + Math.E);
+
+			document.write("<br><br>LN2 = " + Math.LN2);
+
+			document.write("<br><br>LN10 = " + Math.LN10);
+
+			document.write("<br><br>LOG10E = " + Math.LOG10E);
+
+			document.write("<br><br>LOG2E = " + Math.LOG2E);
+
+			document.write("<br><br>SQRT1_2 = " + Math.SQRT1_2);
+
+			document.write("<br><br>SQRT2 = " + Math.SQRT2);
+
+			//java's random numbers
+			document.write("<br><br><strong>How random are JavaScripts numbers? Lets find out lets generate 5,000,000 numbers.</strong><br>")
+			var total = 0;
+			for (i=1; i<=5000000; i++) {
+				var num = Math.random();
+				total += num;
+				if (i % 1000000 == 0) {
+					document.write("Generated " + i + " numbers...<br>");
+				}
+			}
+			var average = total / 5000000;
+			average = Math.round(average * 1000000) / 1000000;
+			document.write("<h2>Average of 5,000,000 JavaScript's random numbers is: " + average + "</h2>");
+		</script>
+		<br>
+		<script type="text/javascript">
+			//makes dates
+			birthday = new Date();
+			birthday = new Date("Monday, July 7, 2003");
+			thanks = new Date();
+			thanks = new Date("Monday, November 30, 1620");
+			idapend = new Date();
+			idapend = new Date("Thursday, July 4, 1776");
+			holidays = idapend + "<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;" + thanks;
+			//writes down dates
+			document.write("Here is my birthday: <strong>" + birthday + "</strong><br>Here are some holidays: <strong>" + holidays + "</strong>");
+		</script>
+		<p><h2>Have fun!</h2></p>
+		<script type="text/javascript">
+			/*if (button=="next") {
+				window.location="next.html";
+			} else if (button=="previous") {
+				window.location="previous.html";
+			} else if (button=="home") {
+				window.location="home.html";
+			} else if (button=="back") {
+				window.location="menu.html";
+			}
+
+
+			switch(button) {
+				case "next":
+					window.location="next.html";
+					break;
+				case "previous":
+					window.location="previous.html";
+					break;
+				case "home":
+					window.location="home.html";
+					break;
+				case "back":
+					window.location="menu.html";
+					break;
+				default:
+					window.alert("Wrong button.");
+			}*/
+			for (i=1; i<11; i++) {
+				document.write("This is line " + i + "<br>");
+			}
+
+			document.write("<br>");
+
+			//nav
+			for (i in navigator) {
+				document.write("<p>Property: " + i + "<br>");
+				document.write("Value: " + navigator[i] + "</p>");
+			}
+		</script>
+		<h3>
+			<div id="hover1">Hover over these words for <i>1.354</i> seconds.</div>
+			<br>
+			<br>
+			<div id="hover2">Hover over these words for <i>0.001</i> seconds.</div>
+		</h3>
+	</body>
+</html>
